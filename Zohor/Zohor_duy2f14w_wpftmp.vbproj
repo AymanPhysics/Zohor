@@ -1,0 +1,1429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A5DA9852-6B14-477C-AF16-EFA77BCF2300}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApplication1</RootNamespace>
+    <AssemblyName>OMEGA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <MyType>Custom</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>ar-EG</TargetCulture>
+    <ProductName>OMEGA</ProductName>
+    <PublisherName>Physics</PublisherName>
+    <SuiteName>OMEGA ERP SOLUTIONS</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>3.1.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <WarningLevel>0</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Omega Icon 2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4EFC17A89521CD96C4B853D00901C70BC7E38596</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Resturant_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashierZ.xaml.vb">
+      <DependentUpon>CashierZ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.xaml.vb">
+      <DependentUpon>Chat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConferencesTypes.xaml.vb">
+      <DependentUpon>ConferencesTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConferencesCheckInOut.xaml.vb">
+      <DependentUpon>ConferencesCheckInOut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Conferences.xaml.vb">
+      <DependentUpon>Conferences.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForm.xaml.vb">
+      <DependentUpon>BasicForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForm1_2.xaml.vb">
+      <DependentUpon>BasicForm1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForm2.xaml.vb">
+      <DependentUpon>BasicForm2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicMethods.vb" />
+    <Compile Include="BlankBanner.xaml.vb">
+      <DependentUpon>BlankBanner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.xaml.vb">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chart.xaml.vb">
+      <DependentUpon>Chart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CloseForm.xaml.vb">
+      <DependentUpon>CloseForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForm3.xaml.vb">
+      <DependentUpon>BasicForm3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Attachments.xaml.vb">
+      <DependentUpon>Attachments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cases.xaml.vb">
+      <DependentUpon>Cases.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForm1_3.xaml.vb">
+      <DependentUpon>BasicForm1_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash.vb">
+      <DependentUpon>BankCash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cancelation.xaml.vb">
+      <DependentUpon>Cancelation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcSalary.xaml.vb">
+      <DependentUpon>CalcSalary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Appartements.xaml.vb">
+      <DependentUpon>Appartements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppartementsSales.xaml.vb">
+      <DependentUpon>AppartementsSales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings.xaml.vb">
+      <DependentUpon>Buildings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingsPlan.xaml.vb">
+      <DependentUpon>BuildingsPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppartementInstallments.xaml.vb">
+      <DependentUpon>AppartementInstallments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash2.xaml.vb">
+      <DependentUpon>BankCash2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ColorsSizes.xaml.vb">
+      <DependentUpon>ColorsSizes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cases2.xaml.vb">
+      <DependentUpon>Cases2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Complaint.xaml.vb">
+      <DependentUpon>Complaint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ANTENATAL.xaml.vb">
+      <DependentUpon>ANTENATAL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CaseData.xaml.vb">
+      <DependentUpon>CaseData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash3.xaml.vb">
+      <DependentUpon>BankCash3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash4.xaml.vb">
+      <DependentUpon>BankCash4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash_G.xaml.vb">
+      <DependentUpon>BankCash_G.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cases3.xaml.vb">
+      <DependentUpon>Cases3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash_G2.xaml.vb">
+      <DependentUpon>BankCash_G2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash_G2Types.xaml.vb">
+      <DependentUpon>BankCash_G2Types.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clinics.xaml.vb">
+      <DependentUpon>Clinics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash_G3.xaml.vb">
+      <DependentUpon>BankCash_G3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksTracing.xaml.vb">
+      <DependentUpon>ChecksTracing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BannerHeader.xaml.vb">
+      <DependentUpon>BannerHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCheckNo.xaml.vb">
+      <DependentUpon>ChangeCheckNo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChecksTracingNew.xaml.vb">
+      <DependentUpon>ChecksTracingNew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeItemId.xaml.vb">
+      <DependentUpon>ChangeItemId.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cases4.xaml.vb">
+      <DependentUpon>Cases4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cases5.xaml.vb">
+      <DependentUpon>Cases5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Companies.xaml.vb">
+      <DependentUpon>Companies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CallCenter.xaml.vb">
+      <DependentUpon>CallCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.xaml.vb">
+      <DependentUpon>Contacts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CalcDayDate.xaml.vb">
+      <DependentUpon>CalcDayDate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CaseInvoices.xaml.vb">
+      <DependentUpon>CaseInvoices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets.xaml.vb">
+      <DependentUpon>Assets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CasesHistoryAll.xaml.vb">
+      <DependentUpon>CasesHistoryAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CaseData2.xaml.vb">
+      <DependentUpon>CaseData2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier.xaml.vb">
+      <DependentUpon>Cashier.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankCash5.xaml.vb">
+      <DependentUpon>BankCash5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryOrder_O.xaml.vb">
+      <DependentUpon>DeliveryOrder_O.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemCollectionMaintenance.xaml.vb">
+      <DependentUpon>ItemCollectionMaintenance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SupliersPayments.xaml.vb">
+      <DependentUpon>SupliersPayments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Replacement.xaml.vb">
+      <DependentUpon>Replacement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT45.xaml.vb">
+      <DependentUpon>RPT45.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServicesIsLabToLab.xaml.vb">
+      <DependentUpon>ServicesIsLabToLab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPTCustomers.xaml.vb">
+      <DependentUpon>RPTCustomers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPTFromIdToId.xaml.vb">
+      <DependentUpon>RPTFromIdToId.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SellersProfits.xaml.vb">
+      <DependentUpon>SellersProfits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Zakat.xaml.vb">
+      <DependentUpon>Zakat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tenders.xaml.vb">
+      <DependentUpon>Tenders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersTemp.xaml.vb">
+      <DependentUpon>CustomersTemp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT44.xaml.vb">
+      <DependentUpon>RPT44.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TasksDetails.xaml.vb">
+      <DependentUpon>TasksDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks.xaml.vb">
+      <DependentUpon>Tasks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPTFromDateToDate.xaml.vb">
+      <DependentUpon>RPTFromDateToDate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstallmentAlerts.xaml.vb">
+      <DependentUpon>InstallmentAlerts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InvestorsProfits.xaml.vb">
+      <DependentUpon>InvestorsProfits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT43.xaml.vb">
+      <DependentUpon>RPT43.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT42.xaml.vb">
+      <DependentUpon>RPT42.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Installment.xaml.vb">
+      <DependentUpon>Installment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPTToDate.xaml.vb">
+      <DependentUpon>RPTToDate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeficitAndIncrease.xaml.vb" />
+    <Compile Include="Display2.xaml.vb">
+      <DependentUpon>Display2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Display.xaml.vb">
+      <DependentUpon>Display.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsUpdate.xaml.vb" />
+    <Compile Include="MSGNo.xaml.vb">
+      <DependentUpon>MSGNo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetails3.xaml.vb">
+      <DependentUpon>ReservationDetails3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT41.xaml.vb">
+      <DependentUpon>RPT41.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyExchangeByDate.xaml.vb">
+      <DependentUpon>CurrencyExchangeByDate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPage.xaml.vb">
+      <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinalReportsSubDetails.xaml.vb">
+      <DependentUpon>FinalReportsSubDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT40.xaml.vb">
+      <DependentUpon>RPT40.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationsRoomsPre.xaml.vb">
+      <DependentUpon>ReservationsRoomsPre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sales2.xaml.vb" />
+    <Compile Include="Types.xaml.vb">
+      <DependentUpon>Types.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT39.xaml.vb">
+      <DependentUpon>RPT39.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperationTypes2.xaml.vb">
+      <DependentUpon>OperationTypes2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperationDescriptions.xaml.vb">
+      <DependentUpon>OperationDescriptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT38.xaml.vb">
+      <DependentUpon>RPT38.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT37.xaml.vb">
+      <DependentUpon>RPT37.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersPayments.xaml.vb">
+      <DependentUpon>TeachersPayments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditServicesAndReservations.xaml.vb">
+      <DependentUpon>EditServicesAndReservations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MachinesMotion.xaml.vb">
+      <DependentUpon>MachinesMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryOrder.xaml.vb">
+      <DependentUpon>DeliveryOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsDelivery.xaml.vb">
+      <DependentUpon>ItemsDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditConnection.xaml.vb">
+      <DependentUpon>EditConnection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderStatus.xaml.vb">
+      <DependentUpon>OrderStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionItemCollectionMotion.xaml.vb">
+      <DependentUpon>ProductionItemCollectionMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionPlan.xaml.vb">
+      <DependentUpon>ProductionPlan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfitRatio.xaml.vb">
+      <DependentUpon>ProfitRatio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT01.xaml.vb">
+      <DependentUpon>RPT01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT02.xaml.vb">
+      <DependentUpon>RPT02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT03.xaml.vb">
+      <DependentUpon>RPT03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT36.xaml.vb">
+      <DependentUpon>RPT36.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT35.xaml.vb">
+      <DependentUpon>RPT35.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT34.xaml.vb">
+      <DependentUpon>RPT34.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalDoctors.xaml.vb">
+      <DependentUpon>ExternalDoctors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT60.xaml.vb">
+      <DependentUpon>RPT60.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceGroups.xaml.vb">
+      <DependentUpon>ServiceGroups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Degrees.xaml.vb">
+      <DependentUpon>Degrees.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services_G.xaml.vb">
+      <DependentUpon>Services_G.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmpCloseShift.xaml.vb">
+      <DependentUpon>EmpCloseShift.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LaboratoryTestTypes.xaml.vb">
+      <DependentUpon>LaboratoryTestTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperationMotions.xaml.vb">
+      <DependentUpon>OperationMotions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperationTypes.xaml.vb">
+      <DependentUpon>OperationTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlanSub.xaml.vb">
+      <DependentUpon>PlanSub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plan.xaml.vb">
+      <DependentUpon>Plan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT33.xaml.vb">
+      <DependentUpon>RPT33.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT32.xaml.vb">
+      <DependentUpon>RPT32.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DrugsDoses.xaml.vb">
+      <DependentUpon>DrugsDoses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetails2.xaml.vb">
+      <DependentUpon>ReservationDetails2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderTypes.xaml.vb">
+      <DependentUpon>OrderTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT31.xaml.vb">
+      <DependentUpon>RPT31.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT30.xaml.vb">
+      <DependentUpon>RPT30.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT29.xaml.vb">
+      <DependentUpon>RPT29.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Groups.xaml.vb">
+      <DependentUpon>Groups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT28.xaml.vb">
+      <DependentUpon>RPT28.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpMultiColumns2.xaml.vb">
+      <DependentUpon>HelpMultiColumns2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpMultiColumns.xaml.vb">
+      <DependentUpon>HelpMultiColumns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCases2.xaml.vb">
+      <DependentUpon>HelpCases2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetailsClinicsShows.xaml.vb">
+      <DependentUpon>ReservationDetailsClinicsShows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entry2.xaml.vb">
+      <DependentUpon>Entry2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetailsRooms.xaml.vb">
+      <DependentUpon>ReservationDetailsRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationsRooms.xaml.vb">
+      <DependentUpon>ReservationsRooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressNote.xaml.vb">
+      <DependentUpon>ProgressNote.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorInstruction.xaml.vb">
+      <DependentUpon>DoctorInstruction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NurseShiftSummary.xaml.vb">
+      <DependentUpon>NurseShiftSummary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetailsOperations.xaml.vb">
+      <DependentUpon>ReservationDetailsOperations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetailsClinics.xaml.vb">
+      <DependentUpon>ReservationDetailsClinics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationsOperations.xaml.vb">
+      <DependentUpon>ReservationsOperations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationsClinics.xaml.vb">
+      <DependentUpon>ReservationsClinics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyWindow.xaml.vb">
+      <DependentUpon>MyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmpOutcome.xaml.vb">
+      <DependentUpon>EmpOutcome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Stores.xaml.vb">
+      <DependentUpon>Stores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.xaml.vb">
+      <DependentUpon>Inventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT27.xaml.vb">
+      <DependentUpon>RPT27.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT26.xaml.vb">
+      <DependentUpon>RPT26.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.xaml.vb">
+      <DependentUpon>Schedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmpShifts.xaml.vb">
+      <DependentUpon>EmpShifts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsCard.xaml.vb">
+      <DependentUpon>ItemsCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT25.xaml.vb">
+      <DependentUpon>RPT25.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT24.xaml.vb">
+      <DependentUpon>RPT24.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT23.xaml.vb">
+      <DependentUpon>RPT23.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT22.xaml.vb">
+      <DependentUpon>RPT22.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KidneysWashMotion.xaml.vb">
+      <DependentUpon>KidneysWashMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT21.xaml.vb">
+      <DependentUpon>RPT21.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemCollectionMotion.xaml.vb">
+      <DependentUpon>ItemCollectionMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemComponants.xaml.vb">
+      <DependentUpon>ItemComponants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImportMessages.xaml.vb">
+      <DependentUpon>ImportMessages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT19.xaml.vb">
+      <DependentUpon>RPT19.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SalesRedFuckingPayment.xaml.vb">
+      <DependentUpon>SalesRedFuckingPayment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT20.xaml.vb">
+      <DependentUpon>RPT20.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrintParcodeGrid.xaml.vb">
+      <DependentUpon>PrintParcodeGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SalesRed.xaml.vb">
+      <DependentUpon>SalesRed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCustomers.xaml.vb">
+      <DependentUpon>HelpCustomers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Statics.xaml.vb">
+      <DependentUpon>Statics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity8.xaml.vb">
+      <DependentUpon>InFertirity8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity7.xaml.vb">
+      <DependentUpon>InFertirity7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity6.xaml.vb">
+      <DependentUpon>InFertirity6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity5.xaml.vb">
+      <DependentUpon>InFertirity5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity4.xaml.vb">
+      <DependentUpon>InFertirity4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OvarianFactor.xaml.vb">
+      <DependentUpon>OvarianFactor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity3.xaml.vb">
+      <DependentUpon>InFertirity3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity2.xaml.vb">
+      <DependentUpon>InFertirity2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity1.xaml.vb">
+      <DependentUpon>InFertirity1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NeededLabTests.xaml.vb">
+      <DependentUpon>NeededLabTests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DrugsAndDoses.xaml.vb">
+      <DependentUpon>DrugsAndDoses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyImages.xaml.vb">
+      <DependentUpon>MyImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Occasion.xaml.vb">
+      <DependentUpon>Occasion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InFertirity.xaml.vb">
+      <DependentUpon>InFertirity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gynecology.xaml.vb">
+      <DependentUpon>Gynecology.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT18.xaml.vb">
+      <DependentUpon>RPT18.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsClothes.xaml.vb">
+      <DependentUpon>ItemsClothes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entry.xaml.vb">
+      <DependentUpon>Entry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT17.xaml.vb">
+      <DependentUpon>RPT17.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT16.xaml.vb">
+      <DependentUpon>RPT16.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT15.xaml.vb">
+      <DependentUpon>RPT15.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT14.xaml.vb">
+      <DependentUpon>RPT14.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyDialog.xaml.vb">
+      <DependentUpon>MyDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UltreSound.xaml.vb">
+      <DependentUpon>UltreSound.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UnitsTypes.xaml.vb">
+      <DependentUpon>UnitsTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT13.xaml.vb">
+      <DependentUpon>RPT13.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CostCenters.xaml.vb">
+      <DependentUpon>CostCenters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT12.xaml.vb">
+      <DependentUpon>RPT12.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT11.xaml.vb">
+      <DependentUpon>RPT11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LabTests.xaml.vb">
+      <DependentUpon>LabTests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LabTestItems.xaml.vb">
+      <DependentUpon>LabTestItems.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Loans.xaml.vb">
+      <DependentUpon>Loans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT10.xaml.vb">
+      <DependentUpon>RPT10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCompanies.xaml.vb">
+      <DependentUpon>CustomerCompanies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT9.xaml.vb">
+      <DependentUpon>RPT9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT8.xaml.vb">
+      <DependentUpon>RPT8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAttendance.xaml.vb">
+      <DependentUpon>EditAttendance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OfficialHolidays.xaml.vb">
+      <DependentUpon>OfficialHolidays.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRequests2.xaml.vb">
+      <DependentUpon>LeaveRequests2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveRequests.xaml.vb">
+      <DependentUpon>LeaveRequests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DirectBonusCut.xaml.vb">
+      <DependentUpon>DirectBonusCut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT7.xaml.vb">
+      <DependentUpon>RPT7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DailyMotion.xaml.vb">
+      <DependentUpon>DailyMotion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NolonRemaining.xaml.vb">
+      <DependentUpon>NolonRemaining.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DriversSellers.xaml.vb">
+      <DependentUpon>DriversSellers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NolonPriceTypes.xaml.vb">
+      <DependentUpon>NolonPriceTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nolon.xaml.vb">
+      <DependentUpon>Nolon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.xaml.vb">
+      <DependentUpon>Invoices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyScrollViewer.xaml.vb">
+      <DependentUpon>MyScrollViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT5.xaml.vb">
+      <DependentUpon>RPT5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT3.xaml.vb">
+      <DependentUpon>RPT3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT6.xaml.vb">
+      <DependentUpon>RPT6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceTypes.xaml.vb">
+      <DependentUpon>ServiceTypes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT2.xaml.vb">
+      <DependentUpon>RPT2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT4.xaml.vb">
+      <DependentUpon>RPT4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services.xaml.vb">
+      <DependentUpon>Services.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreditsDebits.xaml.vb">
+      <DependentUpon>CreditsDebits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInvoices.xaml.vb">
+      <DependentUpon>CustomerInvoices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.xaml.vb">
+      <DependentUpon>Customers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.vb">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Income.xaml.vb">
+      <DependentUpon>Income.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneIndex.xaml.vb">
+      <DependentUpon>PhoneIndex.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PreChat.xaml.vb">
+      <DependentUpon>PreChat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.xaml.vb">
+      <DependentUpon>Sales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers.xaml.vb">
+      <DependentUpon>Suppliers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabsHeaderChecked.xaml.vb">
+      <DependentUpon>TabsHeaderChecked.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReservationDetails.xaml.vb">
+      <DependentUpon>ReservationDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Items.xaml.vb">
+      <DependentUpon>Items.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Levels.xaml.vb">
+      <DependentUpon>Levels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelpCases.xaml.vb">
+      <DependentUpon>HelpCases.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.xaml.vb">
+      <DependentUpon>Employees.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.xaml.vb">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.vb">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Md.vb" />
+    <Compile Include="MSG.xaml.vb">
+      <DependentUpon>MSG.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyGrid.Designer.vb">
+      <DependentUpon>MyGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PCs.xaml.vb">
+      <DependentUpon>PCs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.Designer.vb">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations.xaml.vb">
+      <DependentUpon>Reservations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RPT1.xaml.vb">
+      <DependentUpon>RPT1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TabsHeader.xaml.vb">
+      <DependentUpon>TabsHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test.xaml.vb">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="text\TranslateText.xaml.vb">
+      <DependentUpon>TranslateText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TimePicker.xaml.vb">
+      <DependentUpon>TimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Towns.xaml.vb">
+      <DependentUpon>Towns.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="text\TranslateTextAnimationExample.xaml.vb">
+      <DependentUpon>TranslateTextAnimationExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Banner.xaml.vb">
+      <DependentUpon>Banner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.vb">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyGrid.resx">
+      <DependentUpon>MyGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\OfficialHolidays.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.10.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 R2 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <ItemGroup>
+    <ReferencePath Include="C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll" />
+    <ReferencePath Include="C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll" />
+    <ReferencePath Include="C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Shared.dll" />
+    <ReferencePath Include="C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\ExcelDataReader.3.6.0\lib\net20\ExcelDataReader.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\bin\Interop.WIA.dll">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ReferencePath>
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\Interop.WMPLib.dll">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ReferencePath>
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ReferencePath>
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </ReferencePath>
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Newtonsoft.Json.12.0.2\lib\net40\Newtonsoft.Json.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Newtonsoft.Json.Schema.3.0.11\lib\net40\Newtonsoft.Json.Schema.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\NPOI.2.4.1\lib\net40\NPOI.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\NPOI.2.4.1\lib\net40\NPOI.OOXML.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\NPOI.2.4.1\lib\net40\NPOI.OpenXml4Net.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\NPOI.2.4.1\lib\net40\NPOI.OpenXmlFormats.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationFramework.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Syncfusion.Compression.Base.17.3.0.17\lib\net40\Syncfusion.Compression.Base.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Syncfusion.Licensing.17.3.0.17\lib\net40\Syncfusion.Licensing.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Syncfusion.XlsIO.WinForms.17.3.0.17\lib\net40\Syncfusion.XlsIO.Base.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Management.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Extensions.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.Primitives.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Net.Http.2.2.29\lib\net40\System.Net.Http.WebRequest.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Web.Services.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" />
+    <ReferencePath Include="D:\OneDrive\Projects\Projects\Zohor\packages\WhatsAppAPI.15.4.29\lib\net40\WhatsAppApi.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsFormsIntegration.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CashierZ.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Chat.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ConferencesTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ConferencesCheckInOut.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Conferences.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Banner.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BasicForm.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BasicForm1_2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BasicForm2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BlankBanner.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ChangePassword.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Chart.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CloseForm.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BasicForm3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Attachments.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cases.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BasicForm1_3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cancelation.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CalcSalary.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Appartements.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\AppartementsSales.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Buildings.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BuildingsPlan.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\AppartementInstallments.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ColorsSizes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cases2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Complaint.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ANTENATAL.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CaseData.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash4.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash_G.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cases3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash_G2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash_G2Types.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Clinics.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash_G3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ChecksTracing.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BannerHeader.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ChangeCheckNo.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ChecksTracingNew.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ChangeItemId.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cases4.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cases5.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Companies.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CallCenter.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Contacts.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CalcDayDate.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CaseInvoices.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Assets.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CasesHistoryAll.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CaseData2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Cashier.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\BankCash5.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DeliveryOrder_O.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemCollectionMaintenance.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\SupliersPayments.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Replacement.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT45.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ServicesIsLabToLab.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPTCustomers.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPTFromIdToId.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\SellersProfits.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Zakat.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Tenders.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CustomersTemp.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT44.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\TasksDetails.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Tasks.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPTFromDateToDate.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InstallmentAlerts.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InvestorsProfits.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT43.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT42.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Installment.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPTToDate.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DeficitAndIncrease.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Display2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Display.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemsUpdate.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MSGNo.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetails3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT41.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CurrencyExchangeByDate.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MyPage.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\FinalReportsSubDetails.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT40.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationsRoomsPre.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Sales2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Types.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT39.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OperationTypes2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OperationDescriptions.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT38.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT37.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\TeachersPayments.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EditServicesAndReservations.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MachinesMotion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DeliveryOrder.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemsDelivery.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EditConnection.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OrderStatus.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ProductionItemCollectionMotion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ProductionPlan.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ProfitRatio.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT01.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT02.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT03.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT36.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT35.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT34.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ExternalDoctors.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT60.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ServiceGroups.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Degrees.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Services_G.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EmpCloseShift.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\LaboratoryTestTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OperationMotions.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OperationTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\PlanSub.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Plan.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT33.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT32.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DrugsDoses.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetails2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OrderTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT31.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT30.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT29.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Groups.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT28.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\HelpMultiColumns2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\HelpMultiColumns.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\HelpCases2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetailsClinicsShows.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Entry2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetailsRooms.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationsRooms.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ProgressNote.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DoctorInstruction.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\NurseShiftSummary.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetailsOperations.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetailsClinics.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationsOperations.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationsClinics.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MyWindow.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EmpOutcome.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Stores.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Inventory.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT27.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT26.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Schedule.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EmpShifts.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemsCard.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT25.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT24.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT23.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT22.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\KidneysWashMotion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT21.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemCollectionMotion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemComponants.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ImportMessages.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT19.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\SalesRedFuckingPayment.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT20.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\PrintParcodeGrid.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\SalesRed.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\HelpCustomers.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Statics.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity8.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity7.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity6.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity5.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity4.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OvarianFactor.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity1.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\NeededLabTests.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DrugsAndDoses.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MyImages.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Occasion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\InFertirity.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Gynecology.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT18.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ItemsClothes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Entry.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT17.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT16.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT15.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT14.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MyDialog.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\UltreSound.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\UnitsTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT13.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CostCenters.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT12.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT11.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\LabTests.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\LabTestItems.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Loans.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT10.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CustomerCompanies.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT9.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT8.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\EditAttendance.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\OfficialHolidays.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\LeaveRequests2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\LeaveRequests.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DirectBonusCut.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT7.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DailyMotion.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\NolonRemaining.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\DriversSellers.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\NolonPriceTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Nolon.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CustomerInvoices.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Invoices.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MyScrollViewer.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT5.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT3.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT6.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ServiceTypes.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT2.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT4.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Services.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\CreditsDebits.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Customers.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MainPage.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Income.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\PhoneIndex.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\PreChat.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Sales.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Suppliers.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\TabsHeaderChecked.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\ReservationDetails.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Items.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Levels.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\HelpCases.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Employees.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Help.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Login.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MainWindow.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\MSG.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\PCs.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Reservations.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\RPT1.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\TabsHeader.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\test.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\text\TranslateText.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\TimePicker.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Towns.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\text\TranslateTextAnimationExample.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\Application.g.vb" />
+    <Compile Include="D:\OneDrive\Projects\Projects\Zohor\Zohor\obj\Release\GeneratedInternalTypeHelper.g.vb" />
+  </ItemGroup>
+</Project>

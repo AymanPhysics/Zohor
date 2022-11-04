@@ -1,0 +1,1 @@
+alter table salaryhistory add DelayValue float,OvertimeValue float

@@ -1,0 +1,68 @@
+﻿<Window x:Class="HelpCases2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Help" Height="416" Width="938.269" WindowStartupLocation="CenterScreen" WindowStyle="None" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" TabIndex="0" IsManipulationEnabled="True" SnapsToDevicePixels="True" UseLayoutRounding="True" xmlns:my="clr-namespace:WpfApplication1.EmployeeTracker">
+    <Grid>
+        <Grid Background="{DynamicResource Bg}" Margin="10,10,12,14">
+            <Label FontSize="14" FontWeight="SemiBold" HorizontalContentAlignment="Center" Margin="0,10,24,16" Name="lblMSG" VerticalAlignment="Stretch" VerticalContentAlignment="Center">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FF6DD9FF" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+                
+            </Label>
+            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" Margin="11,77,0,0" MaxLength="10" Name="txtID" TabIndex="0" VerticalAlignment="Top" Width="80">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Stretch" Margin="97,77,626,0" MaxLength="100" Name="txtArName" TabIndex="1" VerticalAlignment="Top">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <DataGrid  Name="DataGridView1" Margin="11,111,35,25" CanUserSortColumns="True" AlternatingRowBackground="{DynamicResource BgDelete}" RowBackground="{DynamicResource BgNew}" CanUserResizeColumns="True" CanUserReorderColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" />
+            <my:BannerHeader Height="50" Margin="11,21,35,0" x:Name="Banner1" VerticalAlignment="Top" />
+            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Right" Margin="0,77,475,0" MaxLength="100" x:Name="txtDiagnoseOnAdmission" TabIndex="1" VerticalAlignment="Top" Width="146">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <ComboBox  Height="28" HorizontalAlignment="Right" Margin="0,77,311,0"  IsEditable="False"  x:Name="CaseOutcomeId" TabIndex="1" VerticalAlignment="Top" Width="162">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <ComboBox  Height="28" HorizontalAlignment="Right" Margin="0,77,144,0"  IsEditable="False"  x:Name="CityId" TabIndex="1" VerticalAlignment="Top" Width="162">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <Button x:Name="btnSave" Content="+" HorizontalAlignment="Right" Margin="0,77,35,0" TabIndex="34" VerticalAlignment="Top" Width="104" Height="28"  Style="{StaticResource GlossyCloseButton}" RenderTransformOrigin="8.207,-0.825">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#B40000FF" Offset="0" />
+                        <GradientStop Color="Black" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,1 @@
+alter table importmessages add CertificateNo nvarchar(100) not null default ''

@@ -1,0 +1,4 @@
+--update M
+--set DocNo=(select MAX(D.SerialNo) from SalesDetails D where M.Flag=D.Flag and M.StoreId=D.StoreId and M.InvoiceNo=D.InvoiceNo)
+--from SalesMaster M
+--where M.Flag in(10,20,30)

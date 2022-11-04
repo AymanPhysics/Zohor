@@ -1,0 +1,1 @@
+alter table InstallmentInvoicesMaster add InstVal float not null default 0

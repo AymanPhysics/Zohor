@@ -1,0 +1,1 @@
+alter table  importmessages add EntryUser bigint not null default 0

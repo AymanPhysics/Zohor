@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="ReservationsRooms"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="706" d:DesignWidth="1143.455">
+    <Grid Background="{DynamicResource Bg}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="231*"/>
+            <ColumnDefinition Width="761*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="0" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#FF6DD9FF" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TabControl Margin="6,10,477,6" Name="TabControl1" UseLayoutRounding="True">
+                <TabItem Header="Rooms" HorizontalAlignment="Left" Name="TabItemReservationsOperations" VerticalAlignment="Top">
+                    <Grid Background="#B4000000"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <ScrollViewer Name="ScrollViewer1" Background="{DynamicResource Bg}" >
+                            <Grid  Name="WR" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" >
+                                <Grid.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#FF6DD9FF" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Grid.Background>
+                            </Grid >
+                        </ScrollViewer>
+                    </Grid >
+                </TabItem>
+            </TabControl>
+            <TabControl Margin="0,10,6,6" Name="TabControl2" UseLayoutRounding="True" HorizontalAlignment="Right" Width="465">
+                <TabItem Header="Current Reservation" HorizontalAlignment="Left" Name="TabItemCurrentReservation" VerticalAlignment="Top">
+                    <Grid Background="{DynamicResource Bg}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <Grid Name="Grid1" Margin="5,5,5,0">
+                            <Grid.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="White" Offset="0" />
+                                    <GradientStop Color="#FF6DD9FF" Offset="1" />
+                                </LinearGradientBrush>
+                            </Grid.Background>
+
+
+                            <Grid Name="Grid1Sub" Margin="9,372,10,129">
+                                <Grid.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#FF6DD9FF" Offset="1" />
+                                    </LinearGradientBrush>
+                                </Grid.Background>
+                                <WindowsFormsHost Margin="0,0,0,39" x:Name="WFH" Background="{x:Null}" TabIndex="333"/>
+                                <Label BorderBrush="#FF078200" BorderThickness="1" Content="Total" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="9,0,0,6" x:Name="lblSurgeon_Copy" UseLayoutRounding="True" VerticalAlignment="Bottom" Width="110" />
+                                <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" Margin="123,0,0,6" MaxLength="10" x:Name="Total" TabIndex="1" VerticalAlignment="Bottom" Width="78" IsReadOnly="True" >
+                                    <TextBox.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="White" Offset="0" />
+                                            <GradientStop Color="#37FFFF00" Offset="1" />
+                                        </LinearGradientBrush>
+                                    </TextBox.Background>
+                                </TextBox>
+                                <Button Content="إعادة طباعة" HorizontalAlignment="Center" Margin="228,0,0,2" x:Name="btnPrint" TabIndex="5" VerticalAlignment="Bottom" Width="200" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            </Grid>
+
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Date" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,54,0,550" Name="lblDate" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" IsReadOnly="True" IsTabStop="False" Margin="208,178,0,426" MaxLength="100" Name="CaseName" TabIndex="1" VerticalAlignment="Top" Width="194">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Patient" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,179,0,425" Name="lblPatient" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" Margin="124,178,0,426" MaxLength="10" Name="CaseId" TabIndex="1" VerticalAlignment="Top" Width="78">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Room Id" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,84,0,520" Name="lblReserv" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="124,85,0,519" Name="lblRoomId" UseLayoutRounding="True" VerticalAlignment="Top" Width="128" />
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Time" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,149,0,455" Name="lblTim" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="124,149,0,455" Name="lblTime" UseLayoutRounding="True" VerticalAlignment="Top" Width="128" />
+                            <ComboBox Height="28" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="{x:Null}" Margin="258,55,0,549" x:Name="EmpIdReservation" TabIndex="1" VerticalAlignment="Top" Width="186" IsEditable="True" IsEnabled="False">
+                                <ComboBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </ComboBox.Background>
+                            </ComboBox>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="السرير" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,117,0,487" x:Name="lblSubId" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="124,117,0,487" x:Name="lblId" UseLayoutRounding="True" VerticalAlignment="Top" Width="128" />
+                            <DatePicker FirstDayOfWeek="Saturday" Height="28" Margin="124,55,195,549" x:Name="DayDate" TabIndex="6" Width="128" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Exit Date" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,312,0,167" x:Name="lblDate_Copy" UseLayoutRounding="True" VerticalAlignment="Center" Width="109" Visibility="Hidden" />
+                            <DatePicker FirstDayOfWeek="Saturday" Height="28" Margin="123,313,195,166" x:Name="ExitDate" TabIndex="6" Width="129" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Hidden" />
+                            <Button Content="Patient Leaving" HorizontalAlignment="Center" Margin="240,0,6,44" x:Name="btnExit" TabIndex="5" VerticalAlignment="Bottom" Width="201" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Button Content="Save" HorizontalAlignment="Center" Margin="14,0,232,44" x:Name="btnSaveWithoutPrint" TabIndex="5" VerticalAlignment="Bottom" Width="201" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Button Content="Doctor Instruction" HorizontalAlignment="Center" x:Name="btnDoctorInstruction" TabIndex="35" VerticalAlignment="Bottom" Width="201" Margin="16,0,230,86" IsTabStop="False" Background="{DynamicResource BgSave}" Height="38"/>
+                            <Button Content="..." HorizontalAlignment="Center" Margin="403,173,0,421" x:Name="btnAddCase" TabIndex="5" VerticalAlignment="Top" Width="44" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Birth Date" Foreground="#FF078200" Height="28" HorizontalContentAlignment="Center" Margin="10,212,0,392" x:Name="lblDateOfBirth" UseLayoutRounding="True" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                            <DatePicker Height="28" Margin="124,212,0,392" x:Name="DateOfBirth" Width="128" FirstDayOfWeek="Saturday" HorizontalAlignment="Left" VerticalAlignment="Top" TabIndex="5" />
+                            <TextBox AutoWordSelection="True" Height="28" Margin="60,244,0,360" MaxLength="10" x:Name="D" TabIndex="4" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <TextBox AutoWordSelection="True" Height="28" Margin="134,244,0,360" MaxLength="10" x:Name="M" TabIndex="4" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <TextBox AutoWordSelection="True" Height="28" Margin="208,244,0,360" MaxLength="10" x:Name="Y" TabIndex="4" Width="44" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Label Content="D" Height="28" HorizontalContentAlignment="Center" Margin="32,245,0,359" x:Name="lblId_Copy" UseLayoutRounding="True" Width="28" BorderThickness="1" BorderBrush="#FF078200" Foreground="#FF078200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <Label Content="M" Height="28" HorizontalContentAlignment="Center" Margin="104,245,0,359" x:Name="lblId_Copy1" UseLayoutRounding="True" Width="28" BorderThickness="1" BorderBrush="#FF078200" Foreground="#FF078200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <Label Content="Y" Height="28" HorizontalContentAlignment="Center" Margin="176,245,0,359" x:Name="lblId_Copy2" UseLayoutRounding="True" Width="28" BorderThickness="1" BorderBrush="#FF078200" Foreground="#FF078200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Diagnosis On Admission" Foreground="#FF078200" Height="28" HorizontalContentAlignment="Center" Margin="10,276,0,328" x:Name="lblDiagnoseOnAdmission" UseLayoutRounding="True" Width="152" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                            <TextBox AutoWordSelection="True" Height="28" Margin="167,277,0,327" MaxLength="1000" x:Name="DiagnoseOnAdmission" TabIndex="11" Width="274" HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Button Content="Inpatient List" HorizontalAlignment="Center" x:Name="btnInpatientList" TabIndex="35" VerticalAlignment="Bottom" Width="201" Margin="240,0,6,86" IsTabStop="False" Background="{DynamicResource BgSave}" Height="38"/>
+                            <Button Content="Move" HorizontalAlignment="Center" x:Name="btnMove" TabIndex="35" Width="201" Margin="12,10,234,0" IsTabStop="False" Background="{DynamicResource BgSave}" Height="38" VerticalAlignment="Top"/>
+                            <Button Content="Cancle" HorizontalAlignment="Center" x:Name="btnCancle" TabIndex="35" Width="201" Margin="218,10,28,0" IsTabStop="False" Background="{DynamicResource BgSave}" Height="38" VerticalAlignment="Top"/>
+                            <ComboBox Height="28" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="{x:Null}" Margin="123,309,0,295" x:Name="OperationType" TabIndex="2" VerticalAlignment="Top" Width="318">
+                                <ComboBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </ComboBox.Background>
+                            </ComboBox>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Operation Type" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="9,309,0,295" x:Name="lblOperationType" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" IsReadOnly="True" IsTabStop="False" Margin="207,339,0,265" MaxLength="100" x:Name="SurgeonName" TabIndex="1" VerticalAlignment="Top" Width="234">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Label BorderBrush="#FF078200" BorderThickness="1" Content="Surgeon" Foreground="#FF078200" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="9,339,0,265" x:Name="lblSurgeon" UseLayoutRounding="True" VerticalAlignment="Top" Width="110" />
+                            <TextBox AutoWordSelection="True" Height="28" HorizontalAlignment="Left" Margin="123,339,0,265" MaxLength="10" x:Name="SurgeonId" TabIndex="1" VerticalAlignment="Top" Width="78">
+                                <TextBox.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="White" Offset="0" />
+                                        <GradientStop Color="#37FFFF00" Offset="1" />
+                                    </LinearGradientBrush>
+                                </TextBox.Background>
+                            </TextBox>
+                            <Button Content="إشغال الغرف" HorizontalAlignment="Center" Margin="240,0,110,0" x:Name="btnPrintAll" TabIndex="5" VerticalAlignment="Bottom" Width="97" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Button Content="Lable A4" HorizontalAlignment="Center" Margin="12,0,336,0" x:Name="btnPrintOne" TabIndex="5" VerticalAlignment="Bottom" Width="99" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Button Content="Lable Small" HorizontalAlignment="Center" Margin="114,0,234,0" x:Name="btnPrintOne2" TabIndex="5" VerticalAlignment="Bottom" Width="99" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                            <Button Content="الإشغال مجمع" HorizontalAlignment="Center" Margin="342,0,10,1" x:Name="btnPrintAll2" TabIndex="5" VerticalAlignment="Bottom" Width="95" Background="{DynamicResource BgSave}" Height="38" IsTabStop="False"/>
+                        </Grid>
+                        <Button Content="Save" HorizontalAlignment="Center" Margin="62,0,313,7" Name="btnSave" TabIndex="5" VerticalAlignment="Bottom" Width="82" Background="{DynamicResource BgSave}" Height="38" Visibility="Hidden"/>
+                        <Button Content="New" HorizontalAlignment="Center" Margin="236,0,139,7" Name="btnNew" TabIndex="6" VerticalAlignment="Bottom" Width="82" Background="{DynamicResource BgNew}" Visibility="Hidden"/>
+                        <Button Content="Delete" HorizontalAlignment="Center" Margin="324,0,51,7" Name="btnDelete" TabIndex="7" VerticalAlignment="Bottom" Width="82" Background="{DynamicResource BgDelete}" Visibility="Hidden"/>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+            <Label Content="القسم" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="28,49,0,0" x:Name="lblInpatientDepartmentId" UseLayoutRounding="True" VerticalAlignment="Top" Width="124"  BorderThickness="1" BorderBrush="#FF078200" Foreground="#FF078200"/>
+            <ComboBox Height="28" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="{x:Null}" Margin="157,49,0,0" x:Name="InpatientDepartmentId" TabIndex="5" VerticalAlignment="Top" Width="146" IsEditable="False">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <ComboBox Height="28" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="{x:Null}" Margin="308,49,0,0" x:Name="InpatientDepartmentSubId" TabIndex="5" VerticalAlignment="Top" Width="146" IsEditable="False">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+
+        </Grid>
+    </Grid>
+</UserControl>
