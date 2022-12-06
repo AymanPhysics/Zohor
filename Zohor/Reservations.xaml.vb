@@ -261,6 +261,7 @@ Public Class Reservations
     End Sub
 
     Sub Clear()
+        If btnSave Is Nothing Then Return
         btnSave.Visibility = Visibility.Visible
         btnSaveWithoutPrint.Visibility = Visibility.Visible
         btnDelete.Visibility = Visibility.Hidden 'Visible
