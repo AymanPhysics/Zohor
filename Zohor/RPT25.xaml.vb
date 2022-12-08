@@ -72,27 +72,28 @@ Public Class RPT25
             Case 22
                 rpt.Rpt = "FnEntryMainAll.rpt"
             Case 23
-                Dim d1 As String = bm.ToStrDate(FromDate.SelectedDate)
-                Dim d2 As String = bm.ToStrDate(ToDate.SelectedDate)
-                Dim Str As String = "select distinct Id from (select M.ToId Id from SalesMaster M where M.Temp=0 and M.Flag in(37,38,47,48) and M.CaseInvoiceNo=0 and M.DayDate between '" & d1 & "' and '" & d2 & "'" &
-        " union all select CaseId from services where DayDate between '" & d1 & "' and '" & d2 & "'" &
-        " union all select CaseId from Reservations where DayDate between '" & d1 & "' and '" & d2 & "'" &
-        " union all select CaseId from OperationMotions where Canceled=0 and CaseInvoiceNo=0 and DayDate between '" & d1 & "' and '" & d2 & "'" &
-        " union all select CaseId from ClinicsHistory where CaseInvoiceNo=0 and DayDate between '" & d1 & "' and '" & d2 & "'" & " ) Tbl"
-                '& " union all select CaseId from Reservations where DayDate between '" & d1 & "' and '" & d2 & "'" & 
+                '        Dim d1 As String = bm.ToStrDate(FromDate.SelectedDate)
+                '        Dim d2 As String = bm.ToStrDate(ToDate.SelectedDate)
+                '        Dim Str As String = "select distinct Id from (select M.ToId Id from SalesMaster M where M.Temp=0 and M.Flag in(37,38,47,48) and M.CaseInvoiceNo=0 and M.DayDate between '" & d1 & "' and '" & d2 & "'" &
+                '" union all select CaseId from services where DayDate between '" & d1 & "' and '" & d2 & "'" &
+                '" union all select CaseId from Reservations where DayDate between '" & d1 & "' and '" & d2 & "'" &
+                '" union all select CaseId from OperationMotions where Canceled=0 and CaseInvoiceNo=0 and DayDate between '" & d1 & "' and '" & d2 & "'" &
+                '" union all select CaseId from ClinicsHistory where CaseInvoiceNo=0 and DayDate between '" & d1 & "' and '" & d2 & "'" & " ) Tbl"
+                '        '& " union all select CaseId from Reservations where DayDate between '" & d1 & "' and '" & d2 & "'" & 
 
-                dt = bm.ExecuteAdapter(Str)
-                Dim MyCases As String = ""
-                Dim ss As String = ""
-                For i As Integer = 0 To dt.Rows.Count - 1
-                    'MyCases &= "," & dt.Rows(i)(0).ToString
-                    ss &= " insert CostCenterIds(Id,CostCenterId) select " & MyId.ToString & "," & dt.Rows(i)(0).ToString
-                Next
-                bm.ExecuteNonQuery(ss)
-                'bm.PrintTbl(CType(sender, Button).Content, "Cases", , , "Where Id in(0" & MyCases & ")")
-                'bm.PrintTbl(CType(sender, Button).Content, "Cases", , , "Where Id in (select T.CostCenterId from CostCenterIds T where T.Id=" & MyId.ToString & ")")
-                'Return
-                rpt.Rpt = "CasesAll.rpt"
+                '        dt = bm.ExecuteAdapter(Str)
+                '        Dim MyCases As String = ""
+                '        Dim ss As String = ""
+                '        For i As Integer = 0 To dt.Rows.Count - 1
+                '            'MyCases &= "," & dt.Rows(i)(0).ToString
+                '            ss &= " insert CostCenterIds(Id,CostCenterId) select " & MyId.ToString & "," & dt.Rows(i)(0).ToString
+                '        Next
+                '        bm.ExecuteNonQuery(ss)
+                '        'bm.PrintTbl(CType(sender, Button).Content, "Cases", , , "Where Id in(0" & MyCases & ")")
+                '        'bm.PrintTbl(CType(sender, Button).Content, "Cases", , , "Where Id in (select T.CostCenterId from CostCenterIds T where T.Id=" & MyId.ToString & ")")
+                '        'Return
+                'rpt.Rpt = "CasesAll.rpt"
+                rpt.Rpt = "ActiveCasesData.rpt"
             Case 25
                 rpt.Rpt = "Sales2_P2.rpt"
             Case 26
@@ -105,8 +106,8 @@ Public Class RPT25
                 rpt.Rpt = "SupliersPaymentsUnpaid.rpt"
         End Select
 
-        rpt.paraname = New String() {"@EmpId", "@FromDate", "@ToDate", "Header", "IsDetailed", "@MyId"}
-        rpt.paravalue = New String() {Val(EmpId.Text), FromDate.SelectedDate, ToDate.SelectedDate, CType(Parent, Page).Title, IIf(IsDetailed.IsChecked, 1, 0), MyId}
+        rpt.paraname = New String() {"@EmpId", "@FromDate", "@ToDate", "Header", "IsDetailed", "@MyId", "@CaseTypeId", "@DoctorId", "@CompanyId"}
+        rpt.paravalue = New String() {Val(EmpId.Text), FromDate.SelectedDate, ToDate.SelectedDate, CType(Parent, Page).Title, IIf(IsDetailed.IsChecked, 1, 0), MyId, 0, 0, 0}
         rpt.Show()
 
     End Sub
